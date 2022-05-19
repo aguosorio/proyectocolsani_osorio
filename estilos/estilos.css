@@ -177,13 +177,13 @@ body{
     
     .texto button{
         align-content: center;
-        width: 20%;
+        width: 15%;
         background: #D4AF37;
         border: solid #D4AF37;
         border-radius: 12px;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        
         font-size: 1.5rem;
+        transition: 2s;
     }
     
     .imagen{
@@ -292,7 +292,7 @@ body{
         font-size: 2rem;
     }
 
-    .puntodeventa__ubicacion--descrip button {
+    .puntodeventa__ubicacion--buton {
         align-content: center;
         width: auto;
         padding: 15%;
@@ -303,6 +303,7 @@ body{
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 1.5rem;
+        transition: 1s;
     }
 
     /*estilo pagina nosotros*/
@@ -334,13 +335,15 @@ body{
     .nosotros__historia--imagenes{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
         margin-bottom: 5%;
     }
 
     .nosotros__historia--imagenes img{
-        width: 20%;
+        width: 19%;
         height: 40%;
     }
 
@@ -386,13 +389,14 @@ body{
     .formulario__contacto button{
         width: 20%;
         height: 6vh;
-        font-size: 4vh;
+        font-size: 2vh;
         margin-top: 5%;
         margin-bottom: 5%;
         background: #B30E0E;
         border-radius: 20px;
         color: white;
         border: solid #B30E0E;
+        transition: 1s;
     }
 
     /*aplicacion de medias queries para mobile*/
@@ -469,7 +473,7 @@ body{
             font-size: 1.2rem;
         }
     
-        .puntodeventa__ubicacion--descrip button {
+        .puntodeventa__ubicacion--button {
             font-size: 1rem;
         }
 
@@ -542,5 +546,21 @@ body{
         }
      }
 
- 
-    
+/*agrego animaciones al proyecto*/
+.puntodeventa__ubicacion--buton:hover{
+    font-size: 2rem;
+}
+
+.texto button:hover{
+    font-size: 2rem;
+}
+
+.nosotros__historia--imagenes img:hover{
+    width: 21%;
+}
+
+.formulario__contacto button:hover{
+    font-size: 2rem;
+    width: 22%;
+    height: 7vh;
+}
