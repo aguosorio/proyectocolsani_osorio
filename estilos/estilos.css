@@ -35,48 +35,27 @@ body{
 
     
 /*estilo de la barra de navegacion*/
-    .header{
-        grid-area: header;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(255, 255, 255);
-        margin-left: 5%;
-        }
+.header__imagen {
+    width: 30%;
+}
 
-    .header__imagen {
-        width: 20em;
-    }
+.header__imagen img{
+    width: 100%;
+}
 
-    .header__imagen img{
-        width: 100%;
-    }
+.header__nav li a{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: all 1s linear;
+    color: rgb(0, 0, 0);
+}
 
-    .header__nav{
-        background-color: rgb(255, 255, 255);
-        list-style: none;
-    }
-    
-    .header__nav li{
-        display: inline-block;
-    }
-    
-    .header__nav li a{
-        display: block;
-        text-decoration: none;
-        font-size: 1.5rem;
-        padding: 1.5rem;
-        border-radius: 10px;
-        transition: all 1s linear;
-        color: rgb(0, 0, 0);
-    }
-    
-    .header__nav li a:hover{
-        text-decoration: none;
-        background-color: rgba(179, 14, 14, 0.466);
-        color: rgb(255, 255, 255);
-    }
-    
+.header__nav li a:hover{
+    text-decoration: none;
+    background-color: rgba(179, 14, 14, 0.466);
+    color: rgb(255, 255, 255);
+}
+
     /*estilo del footer*/
     .footer{
         grid-area: footer;
@@ -177,13 +156,13 @@ body{
     
     .texto button{
         align-content: center;
-        width: 15%;
+        width: 20%;
         background: #D4AF37;
         border: solid #D4AF37;
         border-radius: 12px;
-        
+        padding-top: 2%;
+        padding-bottom: 2%;
         font-size: 1.5rem;
-        transition: 2s;
     }
     
     .imagen{
@@ -292,7 +271,7 @@ body{
         font-size: 2rem;
     }
 
-    .puntodeventa__ubicacion--buton {
+    .puntodeventa__ubicacion--descrip button {
         align-content: center;
         width: auto;
         padding: 15%;
@@ -303,7 +282,6 @@ body{
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 1.5rem;
-        transition: 1s;
     }
 
     /*estilo pagina nosotros*/
@@ -322,7 +300,6 @@ body{
 
     .nosotros__historia--texto{
         font-size: 2.5rem;
-        margin-bottom: 5%;
         width: 80%;
         text-align: center;
     }
@@ -332,20 +309,11 @@ body{
         margin: 1%;
     }
 
-    .nosotros__historia--imagenes{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-bottom: 5%;
-    }
-
-    .nosotros__historia--imagenes img{
-        width: 19%;
-        height: 40%;
-    }
+  .slide{
+    margin: 2vh;
+    width: 40%;
+    height: 60%
+  }
 
     /*estilo pagina contacto*/
     .main__contacto{
@@ -355,48 +323,10 @@ body{
         
     }
 
-    .formulario__contacto{
-        width: 50%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
+    
+
+    .imgfondo{
         background-color: rgb(255, 255, 255);
-        border: solid rgb(94, 94, 94) 1px;
-        border-radius: 20px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-   
-    }
-
-    .formulario__contacto h2{
-        margin: 2%;
-    }
-
-    .formulario__contacto input{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 70%;
-        height: 10vh;
-        margin-top: 2%;
-        margin-top:2%;
-        text-align: center;
-    }
-
-    .formulario__contacto button{
-        width: 20%;
-        height: 6vh;
-        font-size: 2vh;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        background: #B30E0E;
-        border-radius: 20px;
-        color: white;
-        border: solid #B30E0E;
-        transition: 1s;
     }
 
     /*aplicacion de medias queries para mobile*/
@@ -473,7 +403,7 @@ body{
             font-size: 1.2rem;
         }
     
-        .puntodeventa__ubicacion--button {
+        .puntodeventa__ubicacion--descrip button {
             font-size: 1rem;
         }
 
@@ -546,21 +476,5 @@ body{
         }
      }
 
-/*agrego animaciones al proyecto*/
-.puntodeventa__ubicacion--buton:hover{
-    font-size: 2rem;
-}
-
-.texto button:hover{
-    font-size: 2rem;
-}
-
-.nosotros__historia--imagenes img:hover{
-    width: 21%;
-}
-
-.formulario__contacto button:hover{
-    font-size: 2rem;
-    width: 22%;
-    height: 7vh;
-}
+ 
+    

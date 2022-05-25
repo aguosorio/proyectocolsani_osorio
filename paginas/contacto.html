@@ -10,41 +10,83 @@
     <link rel="shortcut icon" href="../favicon.ico.webp">
     <!--estilo css-->
     <link rel="stylesheet" href="../estilos/estilos.css">
-    <!--pagina de animaciones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body id="container">
+<body id="container-fluid">
     <!--barra de navegacion-->
-    <header class="header">
-        <a class="header__imagen" href="../index.html" >
-            <img class="header__logo" src="../asset/images/logo.png" alt="logo colsani"
-                width="150">
-        </a>
-        <nav>
-            <ul class="header__nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/productos.html">Productos</a></li>
-                <li><a href="../paginas/puntodeventa.html">Puntos de venta</a></li>
-                <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
+    <header>    
+      <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+           
+            <a class="navbar-brand" href="../index.html">
+                <img class="header__imagen" src="../asset/images/logo.png" alt="Logo Colsani">
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+             
+              <ul class="navbar-nav header__nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/puntodeventa.html">Punto de venta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            
+            </div>
+          </div>
         </nav>
-    </header>
-
-    <!--formulario de contacto-->
-    <main class="main main__contacto">
-        <form action="" method="get" enctype="">
-            <fieldset class="formulario__contacto">
-                <h2 class="animate__animated animate__pulse">Contactanos</h2>
-                <input type="text" placeholder="Ingrese su nombre">
-                <input type="email" placeholder="Ingrese su mail">
-                <input type="texto" placeholder="Dejanos aquí tu mensaje">
-                <button> Enviar </button>
-            </fieldset>
-        </form>
-    </main>
-
+      </header>  
+      
+    <!--formulario de contacto-->  
+      <div class="container-fluid px-0 main__contacto d-block">
+        <section class="container-fluid h-100"">
+    
+          <div class="row h-100 justify-content-md-center d-flex align-items-center" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" data-aos-easing="ease">
+    
+            <div class="col-md-6 imgfondo">
+    
+              <div class="jumbotron py-3">
+                <h2 class="display-4">Contactanos!</h2>
+                <hr class="my-4">
+                <form>
+                  <div class="form-row">
+                    <div class="col my-3">
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+    
+                  <div class="form-group my-3">
+                    <textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Deja tu mensaje aqui"></textarea>
+                  </div>
+    
+                  <button type="submit" class="btn botton btn-warning border-0">Enviar</button>
+    
+                </form>
+              </div>
+            </div>
+          </div>    
+        </section>
+      </div>
+    
     <footer class="footer">
         <!--informacion sobre la empresa-->
             <div class="footer__info">
@@ -70,6 +112,8 @@
         </section> 
         
     </footer>
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
