@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
 
 <body id="container-fluid">
     <!--barra de navegacion-->
@@ -54,19 +56,19 @@
       </header>  
       
     <!--formulario de contacto-->  
-      <div class="container-fluid px-0 main__contacto d-block">
-        <section class="container-fluid h-100"">
+      <div class="container-fluid main__contacto d-block">
+        <section class="container-fluid h-100">
     
-          <div class="row h-100 justify-content-md-center d-flex align-items-center" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" data-aos-easing="ease">
+          <div class="row h-100 justify-content-center d-flex align-items-center" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" data-aos-easing="ease">
     
-            <div class="col-md-6 imgfondo">
+            <div class="col-sm-12 col-md-6 col-lg-6 imgfondo">
     
-              <div class="jumbotron py-3">
-                <h2 class="display-4">Contactanos!</h2>
+              <div class="p-5">
+                <h2 class="fs-1">Contactanos!</h2>
                 <hr class="my-4">
                 <form>
                   <div class="form-row">
-                    <div class="col my-3">
+                    <div class="col my-4">
                       <input type="text" class="form-control" placeholder="Nombre">
                     </div>
                     <div class="col">
@@ -74,11 +76,11 @@
                     </div>
                   </div>
     
-                  <div class="form-group my-3">
+                  <div class="form-group my-4">
                     <textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Deja tu mensaje aqui"></textarea>
                   </div>
     
-                  <button type="submit" class="btn botton btn-warning border-0">Enviar</button>
+                  <button type="submit" class="btn-coloryellow">Enviar</button>
     
                 </form>
               </div>
@@ -87,31 +89,38 @@
         </section>
       </div>
     
-    <footer class="footer">
+
+      <footer class="container-fluid">
         <!--informacion sobre la empresa-->
-            <div class="footer__info">
-                <img src="../asset/images/logo_amarillo-removebg-preview.png" alt="logo" width="150">
-                <h3>03492 451158  </h3>
-                <h3>Sargento Cabral 252 </h3>
-                <h3>Rafaela Santa Fe, Argentina</h3>
-                <a href="www.gmail.com">info@colsani.com.ar</a>
+        <div class="row footer">
+          <div class="col-6 d-flex flex-column justify-content-center text-center">
+            <a href="../index.html">  
+            <img src="../asset/images/logo_amarillo-removebg-preview.png" alt="logo" width="100">
+            </a>  
+                <p class="m-2 h5">03492 451158  </p>
+                <p class="m-2 h5">Sargento Cabral 252 </p>
+                <p class="m-2 h5">Rafaela Santa Fe, Argentina</p>
+                <a class="m-2 h5 link-primary" href="www.gmail.com">info@colsani.com.ar</a>
             </div>
             <!--enlaces de redes sociales-->
-            <div class="footer__redes">
+            <div class="col-6 d-flex flex-column justify-content-center text-center">
                 <h4>Redes sociales</h4>
-                <div class="footer___redes--enlaces">
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-                </div>
+                <div class="d-flex justify-content-center">
+                <a class="m-2 footer__redes" href=""><i class="bi bi-instagram"></i></a>
+                <a class="m-2 footer__redes" href=""><i class="bi bi-facebook"></i></a>
+                <a class="m-2 footer__redes" href=""><i class="bi bi-whatsapp"></i></a>
             </div>
-     
+          </div> 
             <!--derechos de autor-->
-        <section class="footer__derechosautor">
-                <p>COPYRIGHT 2022 COLSANI, TODOS LOS DERECHOS RESERVDOS</p>
-        </section> 
-        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 fondo__footer text-center">
+                <p class="h6">COPYRIGHT 2022 COLSANI, TODOS LOS DERECHOS RESERVDOS</p>
+            </div>
+          </div>
+        </div> 
     </footer>
+
  <!-- JavaScript Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

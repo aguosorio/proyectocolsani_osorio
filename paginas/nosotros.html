@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
 
 <body id="container">
     <!--barra de navegacion-->
@@ -54,73 +56,89 @@
         </header>  
 
     <!--informacion sobre la historia-->
-    <main class="main main__nosotros">
-        <section class="nosotros__historia">
-            <div class="nosotros__historia--texto">
-            <h2>Nuestra historia...</h2>
-            <p>La sangre Colsani llegó a nuestro país a fines del siglo XIX, oriunda de Milán, Italia. En aquel entonces la Argentina
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+                <h2 class="h1 text-center  animate__animated animate__pulse">Nuestra historia...</h2>
+                <p class="fs-3 lh-lg text-center font-weight-light">La sangre Colsani llegó a nuestro país a fines del siglo XIX, oriunda de Milán, Italia. <br> En aquel entonces la Argentina
                 era escasa en población, y veía con agrado el arribo de inmigrantes que viniesen a desarrollar un oficio en nuestra
-                tierra. El señor Gaetano Colsani, el primero en arribar, traía en su maletín una pila de sueños, y en sus manos (y su
-                corazón) el oficio de panadero. Con el pasar del tiempo ese oficio fue quedando en las entrañas, y se transmitió de
-                generación en generación. Ya en Rafaela, fue Don Pedro Colsani quien deleitó a los argentinos con sus productos, creando una marca que
-                perdura en el presente. Hoy, su hijo y sus nietos mantenemos latente la tradición, buscando siempre alcanzar el mejor de los productos,
-                pues sigue siendo un oficio que ejercemos con el alma.Nuestra forma de elaborar nos lleva a la búsqueda constante de la receta ideal, buscando calidad en los mínimos
-                detalles. Es a través del desarrollo como logramos mejorar nuestra oferta, explorando cada ingrediente, hasta
-                conseguir el sabor exacto, que deleite al cliente.Más de un siglo de historia, o el desarrollo constante, no alcanzan para demostrar el valor y la calidad de nuestros
-                productos, solo el paladar de quien lo coma será juez legítimo. Hoy, más que nunca, estamos seguros que vuestro paladar nos declarará culpable de un sabor inigualable, de un
+                tierra. <br> El señor Gaetano Colsani, el primero en arribar, traía en su maletín una pila de sueños, y en sus manos (y su
+                corazón) el oficio de panadero. <br> Con el pasar del tiempo ese oficio fue quedando en las entrañas, y se transmitió de
+                generación en generación. <br>Ya en Rafaela, fue Don Pedro Colsani quien deleitó a los argentinos con sus productos, creando una marca que
+                perdura en el presente.<br> Hoy, su hijo y sus nietos mantenemos latente la tradición, buscando siempre alcanzar el mejor de los productos,
+                pues sigue siendo un oficio que ejercemos con el alma. <br>Nuestra forma de elaborar nos lleva a la búsqueda constante de la receta ideal, buscando calidad en los mínimos
+                detalles. <br>Es a través del desarrollo como logramos mejorar nuestra oferta, explorando cada ingrediente, hasta
+                conseguir el sabor exacto, que deleite al cliente. <br>Más de un siglo de historia, o el desarrollo constante, no alcanzan para demostrar el valor y la calidad de nuestros
+                productos, solo el paladar de quien lo coma será juez legítimo. </p>
+                <p class="fs-3 lh-lg text-center fw-bolder">Hoy, más que nunca, estamos seguros que vuestro paladar nos declarará culpable de un sabor inigualable, de un
                 placer único.</p>
+          </div>
+        </div>
+      </div>
+      
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-6 m-4">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../asset/images/nuestra historia/1967.jpg" class="d-block w-100" alt="1967">
+                </div>
+                <div class="carousel-item">
+                    <img src="../asset/images/nuestra historia/1970.jpg" class="d-block w-100" alt="1970">
+                </div>
+                <div class="carousel-item">
+                    <img src="../asset/images/nuestra historia/1971.jpg" class="d-block w-100" alt="1971">
+                </div>
+                <div class="carousel-item">
+                    <img src="../asset/images/nuestra historia/1975.jpg" class="d-block w-100" alt="1975">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../asset/images/nuestra historia/1967.jpg" class="d-block w-100" alt="1967">
-            </div>
-            <div class="carousel-item">
-                <img src="../asset/images/nuestra historia/1970.jpg" class="d-block w-100" alt="1970">
-            </div>
-            <div class="carousel-item">
-                <img src="../asset/images/nuestra historia/1971.jpg" class="d-block w-100" alt="1971">
-            </div>
-            <div class="carousel-item">
-                <img src="../asset/images/nuestra historia/1975.jpg" class="d-block w-100" alt="1975">
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
     </main>
 
-    <footer class="footer">
-        <!--informacion sobre la empresa-->
-       <div class="footer__info">
-           <img src="../asset/images/logo_amarillo-removebg-preview.png" alt="logo" width="150">
-           <h3>03492 451158  </h3>
-           <h3>Sargento Cabral 252 </h3>
-           <h3>Rafaela Santa Fe, Argentina</h3>
-           <a href="www.gmail.com">info@colsani.com.ar</a>
-       </div>
-       <!--enlaces de redes sociales-->
-       <div class="footer__redes">
-          <h4>Redes sociales</h4>
-          <div class="footer___redes--enlaces">
-           <a href=""><i class="bi bi-instagram"></i></a>
-           <a href=""><i class="bi bi-facebook"></i></a>
-           <a href=""><i class="bi bi-whatsapp"></i></a>
-       </div>
-       </div>
-
-       <!--derechos de autor-->
-       <section class="footer__derechosautor">
-           <p>COPYRIGHT 2022 COLSANI, TODOS LOS DERECHOS RESERVDOS</p>
-       </section>     
-   </footer>
+    <footer class="container-fluid">
+      <!--informacion sobre la empresa-->
+      <div class="row footer">
+        <div class="col-6 d-flex flex-column justify-content-center text-center">
+          <a href="../index.html">  
+          <img src="../asset/images/logo_amarillo-removebg-preview.png" alt="logo" width="100">
+          </a>  
+              <p class="m-2 h5">03492 451158  </p>
+              <p class="m-2 h5">Sargento Cabral 252 </p>
+              <p class="m-2 h5">Rafaela Santa Fe, Argentina</p>
+              <a class="m-2 h5 link-primary" href="www.gmail.com">info@colsani.com.ar</a>
+          </div>
+          <!--enlaces de redes sociales-->
+          <div class="col-6 d-flex flex-column justify-content-center text-center">
+              <h4>Redes sociales</h4>
+              <div class="d-flex justify-content-center">
+              <a class="m-2 footer__redes" href=""><i class="bi bi-instagram"></i></a>
+              <a class="m-2 footer__redes" href=""><i class="bi bi-facebook"></i></a>
+              <a class="m-2 footer__redes" href=""><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div> 
+          <!--derechos de autor-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 fondo__footer text-center">
+              <p class="h6">COPYRIGHT 2022 COLSANI, TODOS LOS DERECHOS RESERVDOS</p>
+          </div>
+        </div>
+      </div> 
+  </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

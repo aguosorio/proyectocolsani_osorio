@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="estilos/estilos.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
 
 <body id="container-fluid">
     <!--barra de navegacion-->
@@ -31,7 +33,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">   
             <ul class="navbar-nav header__nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active m-auto" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="paginas/productos.html">Productos</a>
@@ -51,53 +53,62 @@
       </nav>
     </header>  
 
-
     <!--contenido principal-->
-    <main class="main main__index">
+    <main>
     <!--portada del documento-->
-        <div class="portada"> 
-            <img src="asset/images/fondo.png" alt="productos colsani">
-        </div>
+      <div class="portada"> 
+        <img src="asset/images/fondo.png" alt="productos colsani">
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center text-center">
+                <p class="text m-4"> Te invitamos a que pruebes </p>
+                <p class="texto-m m-4 fw-bolder animate__heartBeat"> el mejor pan dulce del mundo</p>
+                <p class="text m-4">conoce nuestros productos</p>
 
-         <div class="texto  container-fluid row-col-6">
-            <div class="texto__general">
-                <p class="texto__general--chico"> Te invitamos a que pruebes</p>
-                <p class="texto__general--grande">el mejor pan dulce del mundo</p>
-                <p class="texto__general--chico">Conoce nuestros productos</p>
-                <button>Aqui</button> 
+                <div class="m-4">
+                  <button type="button" class="h4 btn-coloryellow">Aquí</button>
+                </div>
+
             </div>
-        </div>   
-
-        <div class="imagen  container-fluid row-col-6">
-            <img src="asset/images/fotomain.jpg" alt="pan dulce" width="250">
+            <div class="col-sm-12 col-md-6 col-lg-6 img d-flex flex-column justify-content-center">
+                <img class="img--medida m-4" src="asset/images/fotomain.jpg" alt="pan dulce" width="200">
+            </div>
         </div>
-        
+      </div>
     </main>
 
-    <footer class="footer">
+    <footer class="container-fluid">
         <!--informacion sobre la empresa-->
-            <div class="footer__info">
-                <img src="asset/images/logo_amarillo-removebg-preview.png" alt="logo" width="150">
-                <h3>03492 451158  </h3>
-                <h3>Sargento Cabral 252 </h3>
-                <h3>Rafaela Santa Fe, Argentina</h3>
-                <a href="www.gmail.com">info@colsani.com.ar</a>
+        <div class="row footer">
+          <div class="col-6 d-flex flex-column justify-content-center text-center">
+            <a href="index.html">  
+            <img src="asset/images/logo_amarillo-removebg-preview.png" alt="logo" width="100">
+            </a>  
+                <p class="m-2 h5">03492 451158  </p>
+                <p class="m-2 h5">Sargento Cabral 252 </p>
+                <p class="m-2 h5">Rafaela Santa Fe, Argentina</p>
+                <a class="m-2 h5 link-primary" href="www.gmail.com">info@colsani.com.ar</a>
+          </div>
+          <!--enlaces de redes sociales-->
+          <div class="col-6 d-flex flex-column justify-content-center text-center">
+              <h4>Redes sociales</h4>
+              <div class="d-flex justify-content-center">
+              <a class="m-2 footer__redes" href=""><i class="bi bi-instagram"></i></a>
+              <a class="m-2 footer__redes" href=""><i class="bi bi-facebook"></i></a>
+              <a class="m-2 footer__redes" href=""><i class="bi bi-whatsapp"></i></a>
+           </div>
+          </div> 
+          <!--derechos de autor-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 fondo__footer text-center">
+                <p class="h6">COPYRIGHT 2022 COLSANI, TODOS LOS DERECHOS RESERVDOS</p>
+              </div>
             </div>
-            <!--enlaces de redes sociales-->
-            <div class="footer__redes">
-                <h4>Redes sociales</h4>
-                <div class="footer___redes--enlaces">
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-            </div>
-            </div>
-     
-            <!--derechos de autor-->
-        <section class="footer__derechosautor">
-                <p>COPYRIGHT 2022 COLSANI, TODOS LOS DERECHOS RESERVDOS</p>
-        </section> 
+          </div> 
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
