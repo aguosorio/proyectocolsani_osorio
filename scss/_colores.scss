@@ -1,0 +1,29 @@
+/*estilos generales*/
+/* importe una fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Plus+Jakarta+Sans:wght@200&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Libre Bodoni', serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 62.5%;
+}
+body {
+	background-color: rgb(255, 255, 255);
+	height: 100vh;
+}
+
+/*media querys*/
+@media screen and (max-width:768px) {
+	.text {
+		font-size: 2em;
+	}
+	.texto-m {
+		font-size: 4em;
+	}
+}

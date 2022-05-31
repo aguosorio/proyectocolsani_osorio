@@ -1,0 +1,93 @@
+/*estilos generales*/
+/* importe una fuente de google*/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Plus+Jakarta+Sans:wght@200&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Libre Bodoni', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 62.5%; }
+
+body {
+  background-color: white;
+  height: 100vh; }
+
+/*media querys*/
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 2em; }
+  .texto-m {
+    font-size: 4em; } }
+
+.header__imagen {
+  width: 30%; }
+  .header__imagen img {
+    width: 100%; }
+
+.header__nav li a {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: all 1s linear;
+  color: black; }
+  .header__nav li a:hover {
+    text-decoration: none;
+    background-color: rgba(179, 14, 14, 0.466);
+    color: white; }
+
+.footer {
+  background-color: #aca8a8; }
+
+.fondo__footer {
+  background-color: #7b7878;
+  color: white; }
+
+.footer__redes {
+  color: #856d22; }
+
+/*estilo main index*/
+.portada img {
+  width: 100%; }
+
+.img--medida {
+  width: 90%; }
+
+.text {
+  font-size: 3em; }
+
+.texto-m {
+  font-size: 5.5em; }
+
+.btn-coloryellow {
+  background-color: #cfae49;
+  width: 20%;
+  height: 120%;
+  border-color: #cfae49;
+  border-radius: 10px; }
+
+/*estilo main punto de venta*/
+.mapa {
+  width: 100%; }
+  .mapa iframe {
+    width: 100%; }
+
+.btn-colored {
+  font-size: 1.5rem;
+  width: 40%;
+  height: 120%;
+  background: #b30e0e;
+  border-color: #b30e0e;
+  border-radius: 10px;
+  color: white; }
+
+/*estilo main contacto*/
+.main__contacto {
+  background: linear-gradient(0deg, rgba(172, 168, 168, 0.41), rgba(172, 168, 168, 0.41)), url(../asset/images/mesa.jpg);
+  width: 100%;
+  height: 100%; }
+
+.imgfondo {
+  background-color: white; }

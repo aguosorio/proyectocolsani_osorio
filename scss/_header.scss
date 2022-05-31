@@ -1,0 +1,21 @@
+.header__imagen {
+	width: 30%;
+	img {
+		width: 100%;
+	}
+}
+.header__nav {
+	li {
+		a {
+			font-size: 1.5rem;
+			border-radius: 10px;
+			transition: all 1s linear;
+			color: rgb(0, 0, 0);
+			&:hover {
+				text-decoration: none;
+				background-color: rgba(179, 14, 14, 0.466);
+				color: rgb(255, 255, 255);
+			}
+		}
+	}
+}
