@@ -1,10 +1,10 @@
 .footer {
-	background-color: rgba(172, 168, 168, 1);
+	background-color: map-get($colores, gris);
 }
 .fondo__footer {
-	background-color: rgba(123, 120, 120, 1);
-	color: rgb(255, 255, 255);
+	background-color: map-get($colores, grisoscuro);
+	color: map-get($colores, blanco);
 }
 .footer__redes {
-	color: rgba(133, 109, 34, 1);
+	color: map-get($colores, amarillooscuro);
 }

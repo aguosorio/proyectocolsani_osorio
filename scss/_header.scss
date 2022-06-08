@@ -1,16 +1,17 @@
 .header__imagen {
-	width: 30%;
+	width: $ancho_20 + 10;
 	img {
-		width: 100%;
+		width: $ancho_100;
 	}
 }
 .header__nav {
 	li {
 		a {
-			font-size: 1.5rem;
+			font-size: $tamano_fuente - 0.5;
 			border-radius: 10px;
 			transition: all 1s linear;
-			color: rgb(0, 0, 0);
+			color: map-get($colores, negro);
+			margin: 1rem;
 			&:hover {
 				text-decoration: none;
 				background-color: rgba(179, 14, 14, 0.466);
